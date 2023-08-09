@@ -1,0 +1,136 @@
+.login {
+  width: 1156px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 150px auto 0;
+}
+
+.login__header {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.login__form {
+  width: 608px;
+  margin: 120px auto 0;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 26px 20px 54px 20px;
+  box-sizing: border-box;
+}
+
+.login__radio-btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.login__radio-btn {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+  opacity: .5;
+}
+
+/* .login__radio-btn:hover {
+  opacity: .7;
+} */
+
+.login__radio-btn-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.login__radio-btn_checked {
+  opacity: 1;
+}
+
+.login__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 42px auto 0;
+}
+
+.login__field-input {
+  width: 568px;
+  height: 50px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 18px 18px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.login__error {
+  display: block;
+  margin: 8px 0 0 8px;
+  color: #FF1717;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  visibility: hidden;
+}
+
+.login__error_visible {
+  visibility: visible;
+}
+
+.login__submit {
+  border-radius: 4px;
+  background: #000;
+  width: 568px;
+  height: 44px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 42px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.login__submit:hover {
+  opacity: .8;
+}
+
+.login__submit:disabled {
+  cursor: default;
+  opacity: .5;
+}

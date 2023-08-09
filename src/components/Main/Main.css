@@ -1,0 +1,52 @@
+.main {
+  width: 1156px;
+  display: flex;
+  margin: 120px auto 0;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.main__quote {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  max-width: 364px;
+  margin: 0;
+}
+
+.main__quote_right {
+  max-width: 422px;
+  text-align: right;
+}
+
+.main__img {
+  object-fit: contain;
+  width: 320px;
+  height: 320px;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: calc((1156px / 2) - 160px);
+  top: -46px;
+}
+
+.main__caption {
+  color: #000;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 80px 0 0;
+}
+
+.main__right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
