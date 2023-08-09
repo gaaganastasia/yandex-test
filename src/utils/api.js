@@ -79,7 +79,7 @@ class Api {
 }
 
 const api = new Api({
-  url: "http://localhost:3000",
+  url: "https://yandex-test-api.vercel.app",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",

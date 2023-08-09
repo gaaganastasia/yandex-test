@@ -21,8 +21,6 @@ function Feedback(props) {
     if (formValue) {
       props.handleSendFeedback(formValue, resetForm);
     }
-    
-    // props.onSendRequest(values.name, values.phone, values.email, values.task, e, resetForm);
   }
 
   return (
