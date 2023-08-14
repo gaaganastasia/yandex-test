@@ -3,7 +3,7 @@
   display: flex;
   margin: 120px auto 0;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -48,5 +48,5 @@
 .main__right-section {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }

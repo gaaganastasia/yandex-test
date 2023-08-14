@@ -2,7 +2,7 @@
   width: 1156px;
   margin: 270px auto 30px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .footer__copyright {

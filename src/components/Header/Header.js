@@ -10,9 +10,10 @@ function Header(props) {
       {
         location.pathname === '/nice-to-meet-you'
         ?
-        <button onClick={props.handleLogOut} type="button" className="header__link">Выйти</button>
+        // <button onClick={props.handleLogOut} type="button" className="header__link">Выйти</button>
+        <Link to="/" className="header__link">Выйти</Link>
         :
-        <Link to="/login" className="header__link">Войти</Link>
+        <Link to="/nice-to-meet-you" className="header__link">Войти</Link>
       }
     </header>
   );

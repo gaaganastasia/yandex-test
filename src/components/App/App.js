@@ -107,15 +107,18 @@ function App() {
   function handleLogOut() {
     localStorage.removeItem('jwt')
     setLoggedIn(false);
-    redirect("/");
+    return redirect("/");
   }
 
   return (
     <div className="page">
       <Routes>
-        <Route path="/" element={loggedIn ? <Navigate to="/nice-to-meet-you" replace={true} /> : <><Header handleLogOut={handleLogOut} /><Main /> <Story /></>} />
+        {/* <Route path="/" element={loggedIn ? <Navigate to="/nice-to-meet-you" replace={true} /> : <><Header handleLogOut={handleLogOut} /><Main /> <Story /></>} />
         <Route path="/nice-to-meet-you" element={loggedIn ? <><Header handleLogOut={handleLogOut} /><Screencast /><Feedback loading={loading} isSuccess={isSuccess} handleSendFeedback={handleSendFeedback} /></> : <Navigate to="/" replace={true} />} />
-        <Route path="/login" element={loggedIn ? <Navigate to="/nice-to-meet-you" replace={true} /> : <Login loading={loading} isError={isError} error={error} handleLogin={handleLogin} handleSignUp={handleSignUp} />} />
+        <Route path="/login" element={loggedIn ? <Navigate to="/nice-to-meet-you" replace={true} /> : <Login loading={loading} isError={isError} error={error} handleLogin={handleLogin} handleSignUp={handleSignUp} />} /> */}
+        <Route path="/" element={<><Header /><Main /> <Story /></>} />
+        <Route path="/nice-to-meet-you" element={<><Header /><Screencast /><Feedback loading={loading} isSuccess={isSuccess} handleSendFeedback={handleSendFeedback} /></>} />
+        <Route path="/login" element={<Login loading={loading} isError={isError} error={error} handleLogin={handleLogin} handleSignUp={handleSignUp} />} />
       </Routes>
 
       <Footer />
